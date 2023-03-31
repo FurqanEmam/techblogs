@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Post from '../Post/Post';
 import Calculation from '../Calculation/Calculation';
+import './Blogs.css'
 
 
 const Blogs = () => {
@@ -13,7 +14,7 @@ const Blogs = () => {
     }, []);
 
     return (
-        <div>
+        <div className='blogs-container'>
             <div>
                 {
                     blogs.map(blog => <Post 

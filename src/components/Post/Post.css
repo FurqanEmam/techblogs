@@ -1,3 +1,12 @@
+.post-container{
+    max-width: 950px;
+}
+.blogs-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+}
 .cover-image {
     max-width: 100%;
     margin-top: 15px;
@@ -28,3 +37,11 @@
     display: flex;
     align-items: center;
 }
+
+
+@media (max-width: 480px) {
+    .blogs-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
