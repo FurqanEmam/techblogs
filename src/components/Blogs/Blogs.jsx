@@ -6,6 +6,7 @@ import './Blogs.css'
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
+    const [post, setPost] = useState([]);
 
     useEffect(() => {
         fetch('/data.json')
@@ -14,7 +15,8 @@ const Blogs = () => {
     }, []);
 
     const readTime = (blog) => {
-        console.log(blog)
+        const newPost = [...post, blog];
+        setPost(newPost)
     }
 
     return (
@@ -30,6 +32,7 @@ const Blogs = () => {
             </div>
             <div>
                 <Calculation></Calculation>
+                <h1>Post length: {post.length}</h1>
             </div>
         </div>
     );
