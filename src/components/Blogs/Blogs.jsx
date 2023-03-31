@@ -7,6 +7,7 @@ import './Blogs.css'
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     const [post, setPost] = useState([]);
+    // const [] = useState([]);
 
     useEffect(() => {
         fetch('/data.json')
@@ -19,6 +20,13 @@ const Blogs = () => {
         setPost(newPost)
     }
 
+    const bookmark = (blog) => {
+        console.log('bookmarked post', blog)
+    }
+    
+
+
+
     return (
         <div className='blogs-container'>
             <div>
@@ -27,12 +35,14 @@ const Blogs = () => {
                     key={blog.guid}
                     blog={blog}
                     readTime={readTime}
+                    bookmark={bookmark}
                     ></Post>)
                 }
             </div>
             <div>
-                <Calculation post={post}></Calculation>
-                <h1>Post length: {post.length}</h1>
+                <Calculation 
+                post={post}
+                ></Calculation>
             </div>
         </div>
     );

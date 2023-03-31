@@ -11,13 +11,18 @@ const Calculation = ({post}) => {
         totalTime = totalTime + time.read_time;
         // console.log(totalTime);
     }
+    let totalBookmarked = 0;
+    for (const bookmark in post){
+        totalBookmarked =+ 1;
+    }
+
     return (
         <div>
             <div className="time-container">
                 <h3>Spent time on read: {totalTime}min</h3>
             </div>
             <div className='bookmark-container'>
-                <h3>Bookmered blogs: </h3>
+                <h3>Bookmered blogs: {totalBookmarked}</h3>
             </div>
         </div>
     );
