@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Brian Ward",
+		"guid": "72A796D5-92AC-4A17-E3F7-5328E5A78FB5",
+		"read_time": 5,
+		"published_date": "Apr 19, 2023",
+		"cover": "https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+		"author": "https://www.clipartmax.com/png/full/355-3557973_girl-clipart-teacher-user-icon-female-male.png",
+		"title": "How to get your first job as a self-taught programmer"
+	},
+	{
+		"name": "Yardley Wright",
+		"guid": "7572F43C-949E-144C-3B85-766D4F644F86",
+		"read_time": 10,
+		"published_date": "Dec 29, 2022",
+		"cover": "https://images.unsplash.com/photo-1545670723-196ed0954986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+		"author": "https://www.clipartmax.com/png/full/1-19496_male-teacher-2-clip-art-male-user-icon.png",
+		"title": "What should be the proper gauideline to learn JavaScript?"
+	},
+	{
+		"name": "Alexandra Gonzales",
+		"guid": "5DA969A4-0B68-35C4-C573-4EDBFE914A99",
+		"read_time": 12,
+		"published_date": "Jul 15, 2022",
+		"cover": "https://images.unsplash.com/photo-1670057037226-b3d65909424f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+		"author": "https://www.clipartmax.com/png/full/125-1254823_emoji-scalable-vector-graphics-theft-icon-thief-emoji-png.png",
+		"title": "Is web3.0 is the future of the WEB, lets deep dive into it..!"
+	},
+	{
+		"name": "Sophia Thompson",
+		"guid": "B2621E97-C042-CC54-A92B-622B51C3495C",
+		"read_time": 15,
+		"published_date": "Nov 6, 2023",
+		"cover": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+		"author": "https://www.clipartmax.com/png/full/6-60516_thief-robber-png-bad-user-icon.png",
+		"title": "Why do you need to learn the basics of JS to learn ReactJS?"
+	}
+]
