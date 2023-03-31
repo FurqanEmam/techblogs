@@ -1,0 +1,15 @@
+.time-container{
+    border: 2px solid violet;
+    border-radius: 20px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+}
+.bookmark-container{
+    background-color: azure;
+    border-radius: 20px;
+}
+
+.bookmark-container h3{
+    text-align: center;
+}

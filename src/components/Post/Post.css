@@ -1,0 +1,30 @@
+.cover-image {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.author-image{
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 15px;
+}
+
+.bookmark {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.author-container{
+    display: flex;
+    align-items: center;
+}
+.author-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.post-time{
+    display: flex;
+    align-items: center;
+}
