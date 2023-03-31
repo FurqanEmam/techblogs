@@ -13,6 +13,10 @@ const Blogs = () => {
         .then(data => setBlogs(data))
     }, []);
 
+    const readTime = (blog) => {
+        console.log(blog)
+    }
+
     return (
         <div className='blogs-container'>
             <div>
@@ -20,6 +24,7 @@ const Blogs = () => {
                     blogs.map(blog => <Post 
                     key={blog.guid}
                     blog={blog}
+                    readTime={readTime}
                     ></Post>)
                 }
             </div>

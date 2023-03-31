@@ -2,7 +2,10 @@ import React from 'react';
 import './Post.css'
 
 const Post = (props) => {
+    
     const {guid, name, author, cover, published_date, read_time, title} = props.blog;
+    const readTime = props.readTime;
+    
 
     return (
         <div>
@@ -23,7 +26,8 @@ const Post = (props) => {
                 </div>
                 <h1>{title}</h1>
                 <p>#beginners #programming</p>
-                <a href="">Mark As Read</a>
+                <button onClick={() => readTime(props.blog)}>Mark as Read</button>
+                
             </div>
         </div>
     );
