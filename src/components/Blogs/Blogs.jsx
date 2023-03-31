@@ -31,7 +31,7 @@ const Blogs = () => {
                 }
             </div>
             <div>
-                <Calculation></Calculation>
+                <Calculation post={post}></Calculation>
                 <h1>Post length: {post.length}</h1>
             </div>
         </div>
