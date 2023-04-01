@@ -1,0 +1,12 @@
+.bookmark-title{
+    border: 2px solid rgb(155, 200, 218);
+    border-radius: 15px;
+    padding: 5px;
+    /* margin-top: 5px; */
+    color: rgb(26, 26, 61);
+}
+.bookmark-container{
+    max-width: 220px;
+    max-height: auto;
+    margin-top: 5px;
+}

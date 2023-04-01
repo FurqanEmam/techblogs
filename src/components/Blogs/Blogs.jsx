@@ -7,7 +7,8 @@ import './Blogs.css'
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     const [post, setPost] = useState([]);
-    // const [] = useState([]);
+    const [bookmark, setBookmark] = useState([])
+    
 
     useEffect(() => {
         fetch('/data.json')
@@ -20,10 +21,12 @@ const Blogs = () => {
         setPost(newPost)
     }
 
-    const bookmark = (blog) => {
-        console.log('bookmarked post', blog)
+    const bookmarkHandle = (blog) =>{
+        // console.log("bookmark", blog)
+        const newBookmark = [...bookmark, blog];
+        setBookmark(newBookmark);
+        // console.log(newBookmark)
     }
-    
 
 
 
@@ -35,13 +38,14 @@ const Blogs = () => {
                     key={blog.guid}
                     blog={blog}
                     readTime={readTime}
-                    bookmark={bookmark}
+                    bookmarkHandle = {bookmarkHandle}
                     ></Post>)
                 }
             </div>
             <div>
                 <Calculation 
                 post={post}
+                bookmark={bookmark}
                 ></Calculation>
             </div>
         </div>

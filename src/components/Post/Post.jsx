@@ -2,13 +2,14 @@ import React from 'react';
 import './Post.css'
 
 const Post = (props) => {
-    console.log(props)
-    // const [bookmark, setBookmark] = useState([])
+    // console.log(props)
+    
     
     const {name, author, cover, published_date, read_time, title} = props.blog;
     const readTime = props.readTime;
-    const bookmark = props.bookmark;
+    const bookmarkHandle = props.bookmarkHandle;
 
+    
     
     
     
@@ -25,7 +26,7 @@ const Post = (props) => {
                         </div>
                         <div className='post-time'>
                             <p>{read_time} min read</p>
-                            <img onClick={()=>bookmark(props.blog)} id="bookmark" className='bookmark' src="https://cdn-icons-png.flaticon.com/512/25/25667.png" alt="" />
+                            <img onClick={() => bookmarkHandle(props.blog)} id="bookmark" className='bookmark' src="https://cdn-icons-png.flaticon.com/512/25/25667.png" alt="" />
                         </div>
                     </div>
                 </div>

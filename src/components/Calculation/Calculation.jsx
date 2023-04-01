@@ -1,20 +1,18 @@
 import React from 'react';
 import './Calculation.css'
+import Bookmark from '../Bookmark/Bookmark';
 
-const Calculation = ({post}) => {
-    // const post = props.post;
-    // console.log(post)
-    // const {post} = props;
-    // console.log(post)
+const Calculation = (props) => {
+    // console.log(props)
+    const {bookmark, post} = props;
+    
     let totalTime = 0;
     for (const time of post){
         totalTime = totalTime + time.read_time;
         // console.log(totalTime);
     }
-    let totalBookmarked = 0;
-    for (const bookmark in post){
-        totalBookmarked =+ 1;
-    }
+    // let totalBookmarked = 0;
+    
 
     return (
         <div>
@@ -22,7 +20,12 @@ const Calculation = ({post}) => {
                 <h3>Spent time on read: {totalTime}min</h3>
             </div>
             <div className='bookmark-container'>
-                <h3>Bookmered blogs: {totalBookmarked}</h3>
+                <h3>Bookmarked blogs: {bookmark.length}</h3>
+                {
+                    bookmark.map((postData)=> <Bookmark
+                    postData={postData}
+                    ></Bookmark>)
+                }
             </div>
         </div>
     );
