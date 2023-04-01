@@ -1,0 +1,10 @@
+.question-container{
+    max-width: 950px;
+    margin: 0 auto;
+}
+.question-section{
+    max-width: 550px;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+}

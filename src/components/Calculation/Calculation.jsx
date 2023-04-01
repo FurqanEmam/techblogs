@@ -23,6 +23,7 @@ const Calculation = (props) => {
                 <h3>Bookmarked blogs: {bookmark.length}</h3>
                 {
                     bookmark.map((postData)=> <Bookmark
+                    key={postData.guid}
                     postData={postData}
                     ></Bookmark>)
                 }

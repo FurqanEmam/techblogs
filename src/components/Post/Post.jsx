@@ -1,5 +1,7 @@
 import React from 'react';
 import './Post.css'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Post = (props) => {
     // console.log(props)
@@ -27,6 +29,7 @@ const Post = (props) => {
                         <div className='post-time'>
                             <p>{read_time} min read</p>
                             <img onClick={() => bookmarkHandle(props.blog)} id="bookmark" className='bookmark' src="https://cdn-icons-png.flaticon.com/512/25/25667.png" alt="" />
+                            <ToastContainer /> 
                         </div>
                     </div>
                 </div>
