@@ -29,12 +29,22 @@ const Blogs = () => {
         // console.log(newBookmark)
         setBookmark(newBookmark);
         toast("you have already bookmarked this blog.")
-
-        // if(newBookmark.includes())
-        // newBookmark.find(())
+        // const objData = newBookmark.map(authorInfo => (authorInfo.guid));
+        // // console.log(objData.guid)
+        // let idArray = [];
+        // if (objData.includes(blog.guid)) {
+        //     idArray.push(objData);
+        //     console.log(idArray)
+            
+        //   }
+        //   else {
+        //     toast("you have already bookmarked this blog.")
+        //   }
+        
+        
     }
 
-    
+
     return (
         <div>
             <div className='blogs-container'>
